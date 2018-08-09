@@ -22,11 +22,9 @@ module.exports = function(app) {
 
         }
 
-
         function reducer(accumulator, currentValue) {
             return accumulator + currentValue
         }
-
         var chosenFriendArray = []
 
         for (let i = 0; i<totalMatches.length; i++) {
@@ -38,15 +36,7 @@ module.exports = function(app) {
         var friendDataIndex = chosenFriendArray.indexOf(matchedFriendIndex)
 
 
-
-
-
-
         friendsData.push(newFriend)
-
-
-
-
 
         res.json(friendsData[friendDataIndex])
     })
